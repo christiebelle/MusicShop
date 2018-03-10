@@ -1,4 +1,11 @@
 package Instruments.Percussion;
 
-public class Drum {
+import Enums.Family;
+import Instruments.Instruments;
+
+public class Drum extends Instruments {
+
+    public Drum(double tradeprice, double rrp, Family family, String make) {
+        super(tradeprice, rrp, family, make);
+    }
 }
