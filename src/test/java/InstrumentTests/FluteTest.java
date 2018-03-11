@@ -13,7 +13,7 @@ public class FluteTest {
 
     @Before
     public void setUp() throws Exception {
-        flute = new Flute(179.99, 440.00, Family.WOODWIND, "Yamaha");
+        flute = new Flute(179.99, 440.00, Family.WOODWIND, "Yamaha", "Transverse Concert");
     }
 
     @Test
@@ -34,5 +34,10 @@ public class FluteTest {
     @Test
     public void testGetMake() {
         assertEquals("Yamaha", flute.getMake());
+    }
+
+    @Test
+    public void testGetType() {
+        assertEquals("Transverse Concert", flute.getType());
     }
 }

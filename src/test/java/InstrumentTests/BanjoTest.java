@@ -13,7 +13,7 @@ public class BanjoTest {
 
     @Before
     public void setUp() throws Exception {
-        banjo = new Banjo(200.00, 550.00, Family.STRINGS, "Deering");
+        banjo = new Banjo(200.00, 550.00, Family.STRINGS, "Deering", "Bluegrass");
     }
 
     @Test
@@ -34,5 +34,10 @@ public class BanjoTest {
     @Test
     public void testGetMake() {
         assertEquals("Deering", banjo.getMake());
+    }
+
+    @Test
+    public void testGetStyle() {
+        assertEquals("Bluegrass", banjo.getStyle());
     }
 }

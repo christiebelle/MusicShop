@@ -5,7 +5,15 @@ import Instruments.Instruments;
 
 public class Bongos extends Instruments {
 
-    public Bongos(double tradeprice, double rrp, Family family, String make) {
+    int size;
+
+    public Bongos(double tradeprice, double rrp, Family family, String make, int size) {
         super(tradeprice, rrp, family, make);
+
+        this.size = size;
+    }
+
+    public int getSize() {
+        return size;
     }
 }

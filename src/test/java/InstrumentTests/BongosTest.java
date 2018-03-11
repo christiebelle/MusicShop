@@ -13,7 +13,7 @@ public class BongosTest {
 
     @Before
     public void setUp() throws Exception {
-        bongos = new Bongos(180.00, 310.00, Family.PERCUSSION, "Latin Percussion");
+        bongos = new Bongos(180.00, 310.00, Family.PERCUSSION, "Latin Percussion", 7);
     }
 
     @Test
@@ -34,5 +34,10 @@ public class BongosTest {
     @Test
     public void testGetMake() {
         assertEquals("Latin Percussion", bongos.getMake());
+    }
+
+    @Test
+    public void testGetSize() {
+        assertEquals(7, bongos.getSize());
     }
 }
