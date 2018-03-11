@@ -8,6 +8,7 @@ public abstract class Instruments {
     private double rrp;
     private Family family;
     private String make;
+    private Instruments instrument;
 
     public Instruments(double tradeprice, double rrp, Family family, String make) {
         this.tradeprice = tradeprice;
@@ -24,8 +25,8 @@ public abstract class Instruments {
         return rrp;
     }
 
-    public Family getFamily() {
-        return family;
+    public String getFamily() {
+        return family.getFamily();
     }
 
     public String getMake() {
