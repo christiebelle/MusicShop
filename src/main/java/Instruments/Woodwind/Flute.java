@@ -2,8 +2,9 @@ package Instruments.Woodwind;
 
 import Enums.Family;
 import Instruments.Instruments;
+import Interfaces.iPlay;
 
-public class Flute  extends Instruments {
+public class Flute  extends Instruments implements iPlay {
 
     String type;
 
@@ -16,5 +17,15 @@ public class Flute  extends Instruments {
 
     public String getType() {
         return type;
+    }
+
+    @Override
+    public String play() {
+        return "insert lilting flute music here";
+    }
+
+    @Override
+    public String tune() {
+        return "tuning up, floodaloo";
     }
 }

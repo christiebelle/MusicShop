@@ -40,4 +40,14 @@ public class FluteTest {
     public void testGetType() {
         assertEquals("Transverse Concert", flute.getType());
     }
+
+    @Test
+    public void testCanPlay() {
+        assertEquals("insert lilting flute music here", flute.play());
+    }
+
+    @Test
+    public void testCanTune() {
+        assertEquals("tuning up, floodaloo", flute.tune());
+    }
 }

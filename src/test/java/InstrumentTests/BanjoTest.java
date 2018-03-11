@@ -40,4 +40,14 @@ public class BanjoTest {
     public void testGetStyle() {
         assertEquals("Bluegrass", banjo.getStyle());
     }
+
+    @Test
+    public void testCanPlay() {
+        assertEquals("buy me a banjo. clatter janger ringer janger.", banjo.play());
+    }
+
+    @Test
+    public void testCanTune() {
+        assertEquals("tuning up, twang twang twang a lang", banjo.tune());
+    }
 }

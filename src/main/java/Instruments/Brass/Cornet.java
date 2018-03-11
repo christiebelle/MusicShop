@@ -2,8 +2,9 @@ package Instruments.Brass;
 
 import Enums.Family;
 import Instruments.Instruments;
+import Interfaces.iPlay;
 
-public class Cornet extends Instruments {
+public class Cornet extends Instruments implements iPlay {
 
     int valves;
 
@@ -15,5 +16,15 @@ public class Cornet extends Instruments {
 
     public int getValves() {
         return valves;
+    }
+
+    @Override
+    public String play() {
+        return "toot toot! tootaloo!";
+    }
+
+    @Override
+    public String tune() {
+        return "tuning up! toot toot!";
     }
 }

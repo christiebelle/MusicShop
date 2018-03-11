@@ -40,4 +40,14 @@ public class CornetTest {
     public void testGetValves() {
         assertEquals(3, cornet.getValves());
     }
+
+    @Test
+    public void testCanPlay() {
+        assertEquals("toot toot! tootaloo!", cornet.play());
+    }
+
+    @Test
+    public void testCanTune() {
+        assertEquals("tuning up! toot toot!", cornet.tune());
+    }
 }

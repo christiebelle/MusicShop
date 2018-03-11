@@ -40,4 +40,14 @@ public class BongosTest {
     public void testGetSize() {
         assertEquals(7, bongos.getSize());
     }
+
+    @Test
+    public void testCanPlay() {
+        assertEquals("hello Leonard, do you like my bongos", bongos.play());
+    }
+
+    @Test
+    public void testCanTune() {
+        assertEquals("tuning up, bangalang", bongos.tune());
+    }
 }

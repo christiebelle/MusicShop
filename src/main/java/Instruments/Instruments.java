@@ -1,8 +1,9 @@
 package Instruments;
 
 import Enums.Family;
+import Interfaces.iPlay;
 
-public abstract class Instruments {
+public abstract class Instruments implements iPlay {
 
     private double tradeprice;
     private double rrp;
