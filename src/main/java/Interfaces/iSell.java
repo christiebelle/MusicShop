@@ -6,5 +6,4 @@ public interface iSell {
 
     public double calculatemarkup();
 
-
 }
